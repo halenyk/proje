@@ -55,7 +55,7 @@ public class FoodController : MonoBehaviour
         {
             Destroy(this.gameObject);
             player.can -= 1;
-            audio.PlayOneShot(zbesises);
+            GetComponent<AudioSource>().PlayOneShot(zbesises);
         }
         else if (collision.gameObject.CompareTag("Zemin") && this.gameObject.CompareTag("Healthy"))
         {
